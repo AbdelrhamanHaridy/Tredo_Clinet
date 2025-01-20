@@ -18,6 +18,10 @@
                 [routerLinkActiveOptions]="{ exact: true }" routerLink="/merchents">{{ "Dashboard" | translate }}</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" aria-current="page" routerLinkActive="active" routerLink="/merchents/customers">{{
+                "Customers" | translate }}</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" aria-current="page" routerLinkActive="active" routerLink="/merchents/orders">{{
                 "Orders" | translate }}</a>
             </li>
@@ -85,8 +89,15 @@ left: 1%;
 bottom: 5%"><i class="fa-brands fa-whatsapp" style="  font-size: 40px;
   color: white;
   background-color: #092D47;
-  padding: 15px;
+  padding: 10px;
   border-radius: 50px;"></i></a>
+  <a href="/merchents/support" style="z-index: 999;  position: absolute;
+  left: 1%;
+  bottom: 14%"><i class="fa-solid fa-headset" style="  font-size: 40px;
+    color: white;
+    background-color: #e84f4b;
+    padding: 10px;
+    border-radius: 50px;"></i></a>
 <router-outlet></router-outlet>
 <section>
   <div class="container pt-5">

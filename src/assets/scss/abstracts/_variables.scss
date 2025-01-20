@@ -78,13 +78,27 @@
   flex-direction: column;
   align-items: center;
 }
-
+.primary-button {
+  padding: 15px;
+  left: 1186px;
+  background: $tredo-primary;
+  border-radius: 30px;
+  border: 0;
+  span {
+    font-family: "Tajawal";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: $white;
+  }
+}
 .secondary-button {
-  width: 173px;
-  height: 56px;
+  padding: 15px;
   left: 1186px;
   background: $tredo-secondary;
   border-radius: 30px;
+  border: 0;
   span {
     font-family: "Tajawal";
     font-style: normal;

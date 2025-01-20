@@ -1,6 +1,7 @@
 {
   "dir": "rtl",
   "hello": "أهلًا",
+  "Customers": "العملاء",
   "Orders": "الطلبات",
   "Dashboard": "لوحة البيانات",
   "Operations analysis": "تحليل العمليات",
