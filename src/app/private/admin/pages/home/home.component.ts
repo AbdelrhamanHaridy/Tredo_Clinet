@@ -87,7 +87,21 @@ export class HomeComponent implements OnInit {
       id: 3,
       name: 'tredo',
       enName: '',
-      arName: 'اجمالي دخل باي شيب',
+      arName: '(COD) اجمالي المتأخرات لتجار',
+      price: '0',
+    },
+    {
+      id: 4,
+      name: 'tredo',
+      enName: '',
+      arName: 'اجمالي مستحقات شركات الشحن',
+      price: '0',
+    },
+    {
+      id: 5,
+      name: 'tredo',
+      enName: '',
+      arName: 'اجمالي دخل تريدو',
       price: '0',
     },
   ];

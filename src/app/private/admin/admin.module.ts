@@ -35,6 +35,7 @@ import { SafePipe } from './pipes/safe.pipe';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { CardModule } from 'primeng/card';
+import { SettingComponent } from './pages/setting/setting.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { CardModule } from 'primeng/card';
     HomeFilterPipe,
     AdminMerchantProfileComponent,
     FinancialreportsComponent,
-    SafePipe
+    SafePipe,
+    SettingComponent
   ],
   imports: [
     CheckboxModule,

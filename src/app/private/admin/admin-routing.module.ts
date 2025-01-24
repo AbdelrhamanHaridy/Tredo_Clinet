@@ -1,3 +1,4 @@
+import { SettingComponent } from './pages/setting/setting.component';
 import { OrderdetailsComponent } from './../merchents/pages/orderdetails/orderdetails.component';
 import { AdminMerchantProfileComponent } from './pages/admin-merchant-profile/admin-merchant-profile.component';
 import { AddCompanyComponent } from './pages/add-company/add-company.component';
@@ -46,9 +47,9 @@ const routes: Routes = [
   {
     path: 'shipping-companies',
     component: ShippingCompaniesComponent,
-    resolve: {
-      Vendors: VendorsResolver
-    },
+    // resolve: {
+    //   Vendors: VendorsResolver
+    // },
     // canActivate: [RoleGuard.forRoles(Role.ViewShippingCompany, Role.SystemAdministrator)],
     // canActivate:[RoleGuard]
 
@@ -56,20 +57,20 @@ const routes: Routes = [
   {
     path: 'add-company/:id',
     component: AddCompanyComponent,
-    resolve: {
-      Cities: CitiesResolver,
-      Shipping: ShippingResolver
-    },
+    // resolve: {
+    //   Cities: CitiesResolver,
+    //   Shipping: ShippingResolver
+    // },
     // canActivate: [RoleGuard.forRoles(Role.SystemAdministrator, Role.UpdateShippingCompany)]
   }
   ,
   {
     path: 'add-company',
     component: AddCompanyComponent,
-    resolve: {
-      Shipping: ShippingResolver,
-      Cities: CitiesResolver
-    },
+    // resolve: {
+    //   Shipping: ShippingResolver,
+    //   Cities: CitiesResolver
+    // },
     // canActivate: [RoleGuard.forRoles(Role.SystemAdministrator, Role.AddShippingCompany)]
 
   },
@@ -95,45 +96,45 @@ const routes: Routes = [
   {
     path: "all-merchant",
     component: AllMerchantComponent,
-    resolve: {
-      Merchant: MerchantResolver
-    },
+    // resolve: {
+    //   Merchant: MerchantResolver
+    // },
     // canActivate: [RoleGuard.forRoles(Role.SystemAdministrator, Role.ShowMerchant)]
 
   },
   {
     path: "cities",
     component: AllCitiesComponent,
-    resolve: {
-      Cities: CitiesResolver
-    },
+    // resolve: {
+    //   Cities: CitiesResolver
+    // },
     // canActivate: [RoleGuard.forRoles(Role.SystemAdministrator)]
 
   },
   {
     path: "add-city/:id",
     component: AddCityComponent,
-    resolve: {
-      Regions: RegionsResolver,
-    },
+    // resolve: {
+    //   Regions: RegionsResolver,
+    // },
     // canActivate: [RoleGuard.forRoles(Role.SystemAdministrator)]
 
   },
   {
     path: "add-city",
     component: AddCityComponent,
-    resolve: {
-      Regions: RegionsResolver,
-    },
+    // resolve: {
+    //   Regions: RegionsResolver,
+    // },
     // canActivate: [RoleGuard.forRoles(Role.SystemAdministrator)]
 
   },
   {
     path: "shippings",
     component: AllShippingComponent,
-    resolve: {
-      Shipping: ShippingResolver
-    }, // canActivate: [RoleGuard.forRoles(Role.SystemAdministrator)]
+    // resolve: {
+    //   Shipping: ShippingResolver
+    // },  canActivate: [RoleGuard.forRoles(Role.SystemAdministrator)]
   },
   {
     path: "add-shipping/:id",
@@ -166,7 +167,12 @@ const routes: Routes = [
     path: "order-details/:id",
     component: OrderdetailsComponent,
     // canActivate: [RoleGuard.forRoles(Role.SystemAdministrator, Role.AddMerchant)]
-  },];
+  },
+{
+  path:"setting",
+  component: SettingComponent,
+}
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

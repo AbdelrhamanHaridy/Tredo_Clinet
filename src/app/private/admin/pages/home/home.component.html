@@ -7,7 +7,7 @@
     </div>
     <div class="col-12 col-md-9 col-xl-10">
       <div class="m-w row p-2">
-        <div *ngFor="let item of menuListFinance" class="col-lg-4 col-12 col-sm-6 mb-lg-0 mb-4" role="presentation">
+        <div *ngFor="let item of menuListFinance" class="col-lg-4 col-12 col-sm-6 mb-4" role="presentation">
           <div [ngClass]="{ active: selectedList === item.name }" class="admin-card">
             <div class="d-flex">
               <img class="g-img ms-1" width="24" height="24" src="assets/imgs/Dollar Coin-green.png" alt="" />
@@ -17,7 +17,7 @@
               </p>
             </div>
             <div class="mt-2 d-flex justify-content-between">
-              <span class="card-price">{{ item.price }} ريال</span>
+              <span class="card-price">{{ item.price }}جنيه</span>
               <button (click)="openMenuList(item.name)" class="admin-details-btn nav-link">
                 <i class="fa-solid fa-arrow-left"></i>
               </button>
@@ -101,14 +101,14 @@
           <tbody>
             <tr *ngFor="let item of dropdownListReturnedMerchents">
               <td>{{ currentLang === "ar" ? item?.nameAr : item?.nameEn }}</td>
-              <td class="td-price">{{ item?.wallet?.balance }} ريال سعودي</td>
+              <td class="td-price">{{ item?.wallet?.balance }}جنيه مصري</td>
             </tr>
           </tbody>
           <tfoot>
             <td colspan="1"></td>
             <td rowspan="1" class="text-tredo-secondary-2 total-price">
               <span class="total">الاجمالي</span>
-              <span class="total-price">900 ريال سعودي</span>
+              <span class="total-price">900جنيه مصري</span>
             </td>
           </tfoot>
         </table>
@@ -145,7 +145,7 @@
           <tbody>
             <tr *ngFor="let item of [1, 2, 3, 4, 5, 6, 7]">
               <td class="text-center">شركة الطارق</td>
-              <td class="td-price text-center">3000 ريال سعودي</td>
+              <td class="td-price text-center">3000جنيه مصري</td>
               <td class="text-start">
                 <button
                   type="button"
@@ -165,7 +165,7 @@
               class="text-tredo-secondary-2 text-center total-price"
             >
               <span class="total">الاجمالي</span>
-              <span class="total-price">900 ريال سعودي</span>
+              <span class="total-price">900جنيه مصري</span>
             </td>
             <td></td>
           </tfoot>
@@ -175,7 +175,7 @@
     <div *ngIf="selectedList === 'tredo'">
       <!-- <div class="p-2 d-sm-flex align-items-center gap-4">
         <div class="inside-title">
-          <p>اجمالي دخل باي شيب</p>
+          <p>اجمالي دخل تريدو</p>
         </div>
         <div class="form mt-3 mt-sm-0">
           <img
@@ -197,7 +197,7 @@
             <tr>
               <th scope="col">اسم التاجر</th>
               <th scope="col">اسماء شركات الشحن المتعاقد معها التاجر</th>
-              <th scope="col">اجمالي دخل باي شيب من هذا التاجر</th>
+              <th scope="col">اجمالي دخل تريدو من هذا التاجر</th>
               <th scope="col"></th>
             </tr>
           </thead>
@@ -213,7 +213,7 @@
                   </div>
                 </div>
               </td>
-              <td class="td-price">3000 ريال سعودي</td>
+              <td class="td-price">3000جنيه مصري</td>
               <td>
                 <button
                   type="button"
@@ -230,7 +230,7 @@
             <td colspan="2"></td>
             <td rowspan="1" class="text-tredo-secondary-2 total-price">
               <span class="total">الاجمالي</span>
-              <span class="total-price">18000 ريال سعودي</span>
+              <span class="total-price">18000جنيه مصري</span>
             </td>
             <td></td>
           </tfoot>
@@ -845,7 +845,7 @@
                   <td>محمد احمد علي</td>
                   <td>25</td>
                   <td>2/5/2022</td>
-                  <td class="td-price">3000 ريال سعودي</td>
+                  <td class="td-price">3000جنيه مصري</td>
                 </tr>
               </tbody>
             </table>
@@ -883,8 +883,8 @@
                   <td>شركة الطارق</td>
                   <td>350</td>
                   <td>2/5/2022</td>
-                  <td class="td-price">3000 ريال سعودي</td>
-                  <td class="td-tredo-price">800 ريال سعودي</td>
+                  <td class="td-price">3000جنيه مصري</td>
+                  <td class="td-tredo-price">800جنيه مصري</td>
                 </tr>
               </tbody>
             </table>

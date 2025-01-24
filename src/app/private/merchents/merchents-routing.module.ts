@@ -66,7 +66,7 @@ const routes: Routes = [
   {
     path: 'choose-company',
     component: ChooseCompanyComponent,
-    data: { state: {} },
+    // data: { state: {} },
     // canActivate: [UserRoleGuard]
 
   },

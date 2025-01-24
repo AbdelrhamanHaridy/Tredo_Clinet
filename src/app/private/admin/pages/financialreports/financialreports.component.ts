@@ -38,7 +38,7 @@ export class FinancialreportsComponent implements OnInit {
     this.reports = [
       { name: 'مدفوعات - تجار', code: 'merchantorders' },
       { name: 'عمليات - حساب تاجر', code: 'merchantwtrx' },
-      { name: 'مقبوضات - باي شيب', code: 'tredoorders' },
+      { name: 'مقبوضات - تريدو', code: 'tredoorders' },
       { name: 'ضرائب مخصمة', code: 'tredoordersvat' },
       { name: 'عملاء - دائنين', code: 'walletsbalances' },
       { name: 'مدفوعات - موردين', code: 'vendororders' }
